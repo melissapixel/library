@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", "Arial", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container-main {
+    height: 700px;
+    background-image: url("../../res/img/bg/6564c787b507584383bdf3d5ac938e39.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    display: flex;
+
+    .main-empty {
+        flex: 1;
+    }
+
+    .main-form {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+
+        form {
+            justify-content: center;
+            align-items: center;
+
+            max-width: 420px;
+            margin: 40px auto;
+            padding: 28px 26px;
+            background: rgba(135, 19, 135, 0.05);
+            border-radius: 14px;
+            box-shadow: 0 8px 24px rgba(98, 0, 255, 0.18), 0 2px 6px rgba(0,0,0,0.04);
+            backdrop-filter: saturate(1.1) blur(2px);
+            border: 1px solid rgba(142, 36, 173, 0.25);
+            font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto;
+
+            backdrop-filter: blur(5px);
+
+            label {
+                display: block;
+                margin-bottom: 14px;
+                color: #4b2e7a;
+                font-weight: 600;
+                letter-spacing: .2px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="password"] {
+                width: 100%;
+                padding: 12px 14px;
+                margin-top: 6px;
+                border-radius: 10px;
+                border: 1px solid #d9c3f6;
+                background: #fff;
+                color: #2a174a;
+                outline: none;
+                transition: box-shadow 0.2s ease, border-color 0.2s ease;
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            input::placeholder {
+                color: #a089c9;
+            }
+
+            input:focus {
+                border-color: #8a5eea;
+                box-shadow: 0 0 0 10px rgba(138, 94, 234, 0.03);
+            }
+
+            button {
+                width: 100%;
+                padding: 12px 14px;
+                margin-top: 6px;
+                border: 0;
+                border-radius: 10px;
+                background: linear-gradient(135deg, #7c3aed 0%, #8a5eea 50%, #a78bfa 100%);
+                color: white;
+                font-weight: 700;
+                letter-spacing: .4px;
+                cursor: pointer;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+                box-shadow: 0 6px 14px rgba(124, 58, 237, 0.4);
+
+                &:hover {
+                    transform: translateY(-1px);
+                    box-shadow: 0 8px 18px rgba(124, 58, 237, 0.5);
+                }
+
+                &:active {
+                    transform: translateY(0);
+                    box-shadow: 0 4px 10px rgba(124, 58, 237, 0.4);
+                }
+            }
+
+        .form-another {
+            text-align: end;
+            padding-top: 10px;
+
+            a {
+                font-size: 12px;
+
+                &:active {
+                    color: #261a45;
+                }
+            }
+        }
+    }
+
+}
+}
+
+.about-book {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+    box-sizing: border-box;
+    color: #2b0336;
+    font-weight: bold;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    
+    .book-text {
+        flex: 1;
+        letter-spacing: 1.5px;
+
+        h2 {
+            padding: 20px 0px;
+            font-size: 45px;
+            text-align: right;
+        }
+
+        p {
+            margin: 0 auto;
+            text-align: right;
+            font-size: 24px;
+            /* линейный градиент, слева на право, 3 цвета */
+            background-image: linear-gradient(to left, #1c2346 4%, #552674 46%, #ac57c6 100%);
+            /* обрезаем фон по тексту */
+            -webkit-background-clip: text;
+            /* меняет цвет текста заголовка на прозрачный что бы можно было увидеть градиент*/
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .book-img {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        
+        img {
+            max-width: 500px;
+            filter: drop-shadow(0 10px 20px rgba(14, 5, 51, 0.5));
+            object-fit: contain;
+        }
+    }
+}
+
+.container__book_advice {
+    background-image: url("../img/bg/c42ab2ee9365d74e99bc681d0f6217f6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+    // background-position: center center;
+}
+.advice-book {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px;
+    display: flex;
+
+    .book-left {
+        flex: 1;
+        letter-spacing: 0.5px;
+
+        a {
+            &:active, &:hover {
+                color: #2b0336;
+            }
+        }
+        
+        h3 {
+            font-size: 24px;
+
+            span {
+                color: #2a174a;
+            }
+        }
+
+        p {
+            font-size: 30px;
+            // color: #d9c3f6;
+            padding: 20px 0px;
+        }
+    }
+
+    .book-right {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .right-left, .right-right {
+            flex-direction: column;
+            margin: 20px;
+
+            p {
+                margin: 20px;
+                text-align: center;
+                color: #0b112d;
+                font-weight: bold;
+                background: rgba(135, 19, 135, 0.05);
+                border-radius: 14px;
+                box-shadow: 0 8px 24px rgba(98, 0, 255, 0.18), 0 2px 6px rgba(0,0,0,0.04);
+                backdrop-filter: saturate(1.1) blur(2px);
+                border: 1px solid rgba(142, 36, 173, 0.25);
+                padding: 15px 40px;
+            }
+        }
+    }
+}
